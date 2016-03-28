@@ -25,9 +25,9 @@ clean:
 	${SCRIPT_DIR}/clean.sh
 
 run:
-	cd ${SMF_DIR} && \
-	export SMF_CONFIG=${cat emails.conf} && \
-	${SCRIPT_DIR}/run.sh
+	@export SMF_CONFIG=$$(./emails.sh) && \
+		cd ${SMF_DIR} && \
+		../script/run.sh
 
 devshell:
 	cd ${SMF_DIR} && \
