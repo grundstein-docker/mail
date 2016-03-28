@@ -1,6 +1,9 @@
 SMF_DIR=./mail-forwarder
 SCRIPT_DIR=./script
 
+export OWNER=wiznwit
+export NAME=mail-forwarder
+
 .PHONY: \
 	all \
 	install \
