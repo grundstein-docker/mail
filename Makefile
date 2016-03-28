@@ -3,6 +3,7 @@ SCRIPT_DIR=./script
 
 .PHONY: \
 	all \
+	install \
 	build \
 	devshell \
 	push \
@@ -11,6 +12,9 @@ SCRIPT_DIR=./script
 	test
 
 all: help
+
+install:
+	git clone https://github.com/grundstein/mail-forwarder
 
 build:
 	cd ${SMF_DIR} && \
